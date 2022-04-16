@@ -22,6 +22,7 @@ extra:
 # Extensions
 markdown_extensions:
   - abbr
+  - pymdownx.magiclink
   - admonition
   - attr_list
   - def_list
@@ -37,11 +38,11 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.smartsymbols
-  # - pymdownx.tabbed:
-  #     alternate_style: true
-  # - pymdownx.tasklist:
-  #     custom_checkbox: true
-  # - pymdownx.tilde
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.snippets
+  - pymdownx.superfences
+
 
 plugins:
   - search
@@ -49,7 +50,10 @@ plugins:
 
 theme:
   name: material
-  # logo: img/logo-orange.png  # select a custom icon
+  logo: logo.png  # select a custom icon
+  palette:
+    primary: 'white'
+    accent: 'grey'
 
 nav:
   - Home: index.md  # put in sequential blog content here
