@@ -1,0 +1,62 @@
+# Project information
+site_name: Andre Guerra's Blog Page
+site_url: https://agu3rra.github.io
+site_author: Andre Guerra
+site_description: >-
+  My personal blog page.
+
+# Repository
+repo_name: agu3rra.github.io
+repo_url: https://github.com/agu3rra/agu3rra.github.io
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/agu3rra
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/agu3rra
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/agu3rra
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  # - pymdownx.tabbed:
+  #     alternate_style: true
+  # - pymdownx.tasklist:
+  #     custom_checkbox: true
+  # - pymdownx.tilde
+
+plugins:
+  - search
+  # - git-revision-date-localized
+
+theme:
+  name: material
+  # logo: img/logo-orange.png  # select a custom icon
+
+nav:
+  - Home: index.md  # put in sequential blog content here
+  - About: about.md
+  - Blog posts:  # do not put too many categories until you've enough posts
+    - TLS Handshake: blog/tlsHandshake.md
+    - Python CA issues on HTTPS corporate services: blog/pythonCustomsCAs.md
+    - Proxying traffic in iOS13: blog/proxyIos13.md
+  - Project pages:
+    - Volume Calculations for Digital Elevation Models in Python (volpy) : https://agu3rra.github.io/volpy/
