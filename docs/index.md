@@ -1,6 +1,6 @@
 # Welcome \o/
 
-Welcome to my blog. Here you can find articles on technology related subjects that I've found useful myself, so I wanted to share with the world.
+Welcome to my blog. Here you can find articles on technology related topics that I've found useful myself, so I wanted to share with the world. Beginning with a couple of my favorite quotes:
 
 !!! quote "Steve Jobs"
     Stay hungry. Stay Foolish.
