@@ -8,7 +8,7 @@ If you have used any of Python’s HTTP libraries such as [requests](https://pyp
 !!! info
     PS: I did the following with Python 3
 
-![trafficLight](trafficLight.jpeg)  
+![trafficLight](pythonCustomsCAs/trafficLight.jpeg)  
 *Photo by [Scott Warman](https://unsplash.com/@scottiewarman?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com)*
 
 ## Why does it happen?
@@ -30,7 +30,7 @@ $ python
 >>> print(path)
 ```
 
-![cacert.pem](cacertpem.png)  
+![cacert.pem](pythonCustomsCAs/cacertpem.png)  
 *Where is cacert.pem?*
 
 ## Ok, I found certifi’s path. Now what?
@@ -42,10 +42,10 @@ Append the [Base64](https://en.wikipedia.org/wiki/Base64) encoded certificate da
 1. Access the **Details tab** and finally **Copy to File**.
 1. Open the certificate file and copy its contents to the `cacert.pem` file.
 
-![certificatesview](certificatesview.png)  
+![certificatesview](pythonCustomsCAs/certificatesview.png)  
 *Saving a certificate’s CA from the browser*
 
-![certificatepem](certificatepem.png)  
+![certificatepem](pythonCustomsCAs/certificatepem.png)  
 *Opening a certificate’s CA in Base64 format using [VSCode](https://code.visualstudio.com/)*
 
 ## Try it yourself

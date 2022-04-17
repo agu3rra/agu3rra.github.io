@@ -4,7 +4,7 @@ Reading time: about 5 minutes.
 ## Introduction
 The **objective** of this article is to demystify the process by which most applications exchange a secret and establish a secure communication channel in an insecure medium such as the Internet. It also attempts to shed some light on the role a [Certificate Authority (CA)](https://en.wikipedia.org/wiki/Certificate_authority) plays in the process.
 
-![phil](phil.jpeg)  
+![phil](tlsHandshake/phil.jpeg)  
 *Cartoon by [Phil Johnson](https://twitter.com/@chumworth)*. Used with previous authorization.
 
 ## The need for a secret
@@ -38,7 +38,7 @@ The above process is what a **TLS Handshake is: an exchange of messages that ser
     public and private keys are mathematically paired with one another, but the details and explanation are not in the scope of this article.
 
 ## The Certificate Authority
-What if the initial handshake message from Caesar had arrived at someone from the enemy army? How could he be sure that he was talking to Maximus on the other end? Let’s assume Maximus could use a Roman empire seal of authenticity that he was sent along with his message and that the enemy couldn't forge one. That seal established a **trusting relationship** between Caesar and whoever was on the other end of the line. That is the *role of a Certificate Authority (CA): a 3rd party one can trust (the Roman empire’s seal emitter) that attests that the public key being used in the TLS handshake process belongs to a specific server (Maximus), so the party that initiated the communication (Caesar) can perform the exchange of the secret to be used in further messages.*
+What if the initial handshake message from Caesar had arrived at someone from the enemy army before it reached Maximus? Upon receiving the first response, how could he be sure that he was talking to Maximus on the other end? The answer is that Maximus uses a Roman empire seal of authenticity that he was sent along with his message and that the enemy couldn't forge. That seal established a **trusting relationship** between Caesar and whoever was on the other end of the line. That is the *role of a Certificate Authority (CA): a 3rd party one can trust (the Roman empire’s seal emitter) that attests that the public key being used in the TLS handshake process belongs to a specific server (Maximus), so the party that initiated the communication (Caesar) can perform the exchange of the secret to be used in further messages.*
 
 ## FAQ’s
 ??? question "Why don’t we just use asymmetric encryption?"
@@ -66,7 +66,7 @@ for character in message:
 ```
 
 ## References
-* [https://en.wikipedia.org/wiki/Caesar_cipher](https://en.wikipedia.org/wiki/Caesar_cipher)
-* [https://en.wikipedia.org/wiki/Public-key_cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography)
-* [https://en.wikipedia.org/wiki/HTTPS](https://en.wikipedia.org/wiki/HTTPS)
-* [https://www.tutorialspoint.com/cryptography_with_python/cryptography_with_python_caesar_cipher.htm](https://www.tutorialspoint.com/cryptography_with_python/cryptography_with_python_caesar_cipher.htm)
+* https://en.wikipedia.org/wiki/Caesar_cipher
+* https://en.wikipedia.org/wiki/Public-key_cryptography
+* https://en.wikipedia.org/wiki/HTTPS
+* https://www.tutorialspoint.com/cryptography_with_python/cryptography_with_python_caesar_cipher.htm

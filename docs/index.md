@@ -1,6 +1,6 @@
 # Welcome \o/
 
-Welcome to my blog. Here you can find articles on technology related topics that I've found useful myself, so I wanted to share with the world. Beginning with a couple of my favorite quotes:
+Welcome to my blog. Here you can find articles on technology related topics that I've found useful myself, so I wanted to share with the world. I'll begin with a couple of my favorite quotes:
 
 !!! quote "Steve Jobs"
     Stay hungry. Stay Foolish.
@@ -22,7 +22,7 @@ Welcome to my blog. Here you can find articles on technology related topics that
 
     So you want to hunt for bugs in Bug Bounty programs that allow testing of iOS applications, but couldn’t figure out how to take a pick on traffic coming out of your device? You’ve come to the right place! :)
 
-!!! tldr "[Trouble using Python to access HTTP corporate services because of internal CA’s?¶](blog/pythonCustomsCAs.md)"
+!!! tldr "[Trouble using Python to access HTTP corporate services because of internal CA’s?](blog/pythonCustomsCAs.md)"
     ![snake](icons/snake.jpg){ align=left }
     Reading time: 3 minutes
 

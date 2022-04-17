@@ -10,7 +10,7 @@ So you want to hunt for bugs in Bug Bounty programs that allow testing of iOS ap
 !!! info
     At the time I wrote this article (in late 2021?), some proxy applications' default generated certificate was not accepted by iOS 13. That has now changed, but I decided to keep this article up since it teaches how to generate a certificate yourself in case you need it for other situations.
 
-![phoneLocked](phoneLocked.jpeg)
+![phoneLocked](proxyIos13/phoneLocked.jpeg)
 *Photo by [Yura Fresh](https://unsplash.com/@mr_fresh?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com)*
 
 ## iOS 13’s new certificate requirements
@@ -54,7 +54,7 @@ $ cat ca.pem >> certificate_zap.pem
 $ sed 's/RSA //' certificate_zap.pem > certificate_zap_final.pem
 ```
 
-![genCert.png](genCert.png)
+![genCert.png](proxyIos13/genCert.png)
 *Generating certificate from git bash*
 
 ### Importing it into ZAP
@@ -69,7 +69,7 @@ Use the `certificate_zap_final.pem` file generated in the previous step as the c
 ### Importing the certificate into iOS
 Email the `ca.pem` file generated previously to your iOS device. Opening it on Apple’s **Mail app** is the easiest way to get it installed into your device as what is called a **Profile**. In iOS, simply click the ca.pem file inside the Mail app to download the new Profile. Then go to the **Settings > General > Profile** menu and complete the installation of the certificate. Finally, go to **Settings > General > About > Certificate Trust Settings** and enable full trust of the certificate.
 
-![iosReference](iosReference.png)
+![iosReference](proxyIos13/iosReference.png)
 *Reference screenshots from an iOS device*
 
 ### Redirecting traffic
@@ -78,10 +78,10 @@ Access **Settings > Wi-Fi**, click the info sign beside your Wi-Fi network and a
 ## Congratulations!
 And you’re done! If you launch any application on your iOS device now, all HTTP traffic should be visible in ZAP.
 
-![zapSample.png](zapSample.png)
+![zapSample.png](proxyIos13/zapSample.png)
 *Sample traffic upon opening Pinterest on iOS*
 
 ## References
-* [https://support.apple.com/en-us/HT210176](https://support.apple.com/en-us/HT210176)
-* [https://owasp.org/www-project-zap/](https://owasp.org/www-project-zap/)
-* [https://portswigger.net/burp](https://portswigger.net/burp)
+* https://support.apple.com/en-us/HT210176
+* https://owasp.org/www-project-zap/
+* https://portswigger.net/burp
