@@ -50,7 +50,8 @@ plugins:
 
 theme:
   name: material
-  logo: logo.png  # select a custom icon
+  logo: logo.png
+  favicon: logo-white.png
   palette:
     primary: 'white'
     accent: 'grey'
