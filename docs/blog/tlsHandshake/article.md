@@ -1,10 +1,10 @@
 # TLS Handshake: a secretive way to say hello
-Reading time: about 5 minutes.
+5 min read
 
 ## Introduction
 The **objective** of this article is to demystify the process by which most applications exchange a secret and establish a secure communication channel in an insecure medium such as the Internet. It also attempts to shed some light on the role a [Certificate Authority (CA)](https://en.wikipedia.org/wiki/Certificate_authority) plays in the process.
 
-![phil](tlsHandshake/phil.jpeg)  
+![phil](phil.jpeg)  
 *Cartoon by [Phil Johnson](https://twitter.com/@chumworth)*. Used with previous authorization.
 
 ## The need for a secret

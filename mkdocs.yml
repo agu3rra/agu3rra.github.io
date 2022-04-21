@@ -60,8 +60,9 @@ nav:
   - Home: index.md  # put in sequential blog content here
   - About: about.md
   - Blog posts:  # do not put too many categories until you've enough posts
-    - TLS Handshake: blog/tlsHandshake.md
-    - Python CA issues on HTTPS corporate services: blog/pythonCustomsCAs.md
-    - Proxying traffic in iOS13: blog/proxyIos13.md
+    - Pragmatic Security Testing: blog/pragmaticST/article.md
+    - Python CA issues on HTTPS corporate services: blog/pythonCustomsCAs/article.md
+    - Proxying traffic in iOS13: blog/proxyIos13/article.md
+    - TLS Handshake: blog/tlsHandshake/article.md
   - Project pages:
     - Volume Calculations for Digital Elevation Models in Python (volpy) : https://agu3rra.github.io/volpy/

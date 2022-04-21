@@ -1,6 +1,6 @@
 # How to set up a proxy for security testing in iOS13
 
-Reading time: about 4 minutes.
+4 min read
 
 So you want to hunt for bugs in Bug Bounty programs that allow testing of iOS applications, but couldn’t figure out how to take a pick on traffic coming out of your device? You’ve come to the right place! :)
 
@@ -10,7 +10,7 @@ So you want to hunt for bugs in Bug Bounty programs that allow testing of iOS ap
 !!! info
     At the time I wrote this article (in late 2021?), some proxy applications' default generated certificate was not accepted by iOS 13. That has now changed, but I decided to keep this article up since it teaches how to generate a certificate yourself in case you need it for other situations.
 
-![phoneLocked](proxyIos13/phoneLocked.jpeg)
+![phoneLocked](phoneLocked.jpeg)
 *Photo by [Yura Fresh](https://unsplash.com/@mr_fresh?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com)*
 
 ## iOS 13’s new certificate requirements
@@ -54,7 +54,7 @@ $ cat ca.pem >> certificate_zap.pem
 $ sed 's/RSA //' certificate_zap.pem > certificate_zap_final.pem
 ```
 
-![genCert.png](proxyIos13/genCert.png)
+![genCert.png](genCert.png)
 *Generating certificate from git bash*
 
 ### Importing it into ZAP
@@ -69,7 +69,7 @@ Use the `certificate_zap_final.pem` file generated in the previous step as the c
 ### Importing the certificate into iOS
 Email the `ca.pem` file generated previously to your iOS device. Opening it on Apple’s **Mail app** is the easiest way to get it installed into your device as what is called a **Profile**. In iOS, simply click the ca.pem file inside the Mail app to download the new Profile. Then go to the **Settings > General > Profile** menu and complete the installation of the certificate. Finally, go to **Settings > General > About > Certificate Trust Settings** and enable full trust of the certificate.
 
-![iosReference](proxyIos13/iosReference.png)
+![iosReference](iosReference.png)
 *Reference screenshots from an iOS device*
 
 ### Redirecting traffic
@@ -78,7 +78,7 @@ Access **Settings > Wi-Fi**, click the info sign beside your Wi-Fi network and a
 ## Congratulations!
 And you’re done! If you launch any application on your iOS device now, all HTTP traffic should be visible in ZAP.
 
-![zapSample.png](proxyIos13/zapSample.png)
+![zapSample.png](zapSample.png)
 *Sample traffic upon opening Pinterest on iOS*
 
 ## References
