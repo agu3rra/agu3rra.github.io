@@ -1,6 +1,6 @@
 # Trouble using Python to access HTTP corporate services because of internal CA’s?
 
-Reading time: About 3 minutes
+3 min read
 
 ## The problem
 If you have used any of Python’s HTTP libraries such as [requests](https://pypi.org/project/requests/) or [urllib](https://docs.python.org/3/library/urllib.html) you may have stumbled upon the **CERTIFICATE_VERIFY_FAILED error**. One of the possible causes is the service you are connecting to uses either a certificate that was self-signed or issued by a [Certificate Authority (CA)](https://en.wikipedia.org/wiki/Certificate_authority) that is not publicly recognized. The latter is very common in corporate intranet services, so if you’re building an application to talk to these you must “tell” Python that its CA is trusted.
@@ -8,7 +8,7 @@ If you have used any of Python’s HTTP libraries such as [requests](https://pyp
 !!! info
     PS: I did the following with Python 3
 
-![trafficLight](pythonCustomsCAs/trafficLight.jpeg)  
+![trafficLight](trafficLight.jpeg)  
 *Photo by [Scott Warman](https://unsplash.com/@scottiewarman?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com)*
 
 ## Why does it happen?
@@ -18,7 +18,7 @@ Python scripts don’t use the operating system’s built-in certificate store t
 Your computer’s operating system comes pre-loaded with a list of public known CA’s (e.g.: DigiCert, GoDaddy etc) so that a website served using HTTPS can be accessed. The catch is: there are lots of different places that a given program may be using as its source of trusted CA’s.
 
 !!! tip
-    If you wish to know more about a CA and how that trust relationship works and most importantly the **implications of adding another CA to your trust store**, try reading [this article](tlsHandshake.md).
+    If you wish to know more about a CA and how that trust relationship works and most importantly the **implications of adding another CA to your trust store**, try reading [this article](../tlsHandshake/article.md).
 
 ## Where does Python keep its CA’s?
 In the `cacert.pem` file. To locate it, all you have to do is find the install path of Python’s standard `certifi` package. The easiest route I know for that is simply opening a Python [REPL](https://en.wikipedia.org/wiki/Read–eval–print_loop) (`$ python`) and typing the following:
@@ -30,7 +30,7 @@ $ python
 >>> print(path)
 ```
 
-![cacert.pem](pythonCustomsCAs/cacertpem.png)  
+![cacert.pem](cacertpem.png)  
 *Where is cacert.pem?*
 
 ## Ok, I found certifi’s path. Now what?
@@ -42,10 +42,10 @@ Append the [Base64](https://en.wikipedia.org/wiki/Base64) encoded certificate da
 1. Access the **Details tab** and finally **Copy to File**.
 1. Open the certificate file and copy its contents to the `cacert.pem` file.
 
-![certificatesview](pythonCustomsCAs/certificatesview.png)  
+![certificatesview](certificatesview.png)  
 *Saving a certificate’s CA from the browser*
 
-![certificatepem](pythonCustomsCAs/certificatepem.png)  
+![certificatepem](certificatepem.png)  
 *Opening a certificate’s CA in Base64 format using [VSCode](https://code.visualstudio.com/)*
 
 ## Try it yourself
