@@ -1,5 +1,5 @@
 # Pragmatic Security Testing
-10 minutes read
+8 min read
 
 ## Intro
 It is a consensus in the software community that performing security testing continuously and earliest in the development process (aka shifting left) is ideal as it prevents vulnerabilities from creeping into code and therefore reduces the costs of having to fix them late in the process. This article seeks to provide an overview of different security scanners available and practical use strategies to establish a good development workflow.
