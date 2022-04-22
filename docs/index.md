@@ -13,7 +13,7 @@ Welcome to my blog. Here you can find articles on technology related topics that
     ![snake](icons/pragmaticST.jpg){ align=left }
     10 min read
 
-    The purpose of this article is to provide an overview of different security-related testing methodologies available and practical strategies of when to trigger them to establish a good development workflow.
+    This article seeks to provide an overview of different security scanners available and practical use strategies to establish a good development workflow.
 
 !!! tldr "[Trouble using Python to access HTTP corporate services because of internal CA’s?](blog/pythonCustomsCAs/article.md)"
     ![snake](icons/snake.jpg){ align=left }
