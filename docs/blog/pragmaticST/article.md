@@ -39,7 +39,9 @@ What I also like about tools like bandit and [hadolint](https://github.com/hadol
 import yaml
 
 yaml_file = "some_path_provided_by_the_user.yaml"
-foo = yaml.load(schema_dict)  # nosec Bandit B506: user input has been previously sanitized.
+with open(yaml_file, 'r') as fh:
+    my_yaml = fh.read()
+foo = yaml.load(my_yaml)  # nosec Bandit B506: user input has been previously sanitized.
 ```
 
 *Example of a triaged vulnerability in python code using banding. B506 highlights that the load() method in the [pyyaml](https://pypi.org/project/PyYAML/) library is vulnerable when consuming user-provided input. Adding `# nosec` as part of the comment, informs the scanner that the issue is to be ignored.*
