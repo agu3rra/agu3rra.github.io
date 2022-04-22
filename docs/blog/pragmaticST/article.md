@@ -33,7 +33,7 @@ As we learn the weak points of our application, we can also grow the number of u
 ### IDE Linters
 The best possible flow is the one that enables developers to take action without even having to leave their Integrated Development Environment ([IDE](https://en.wikipedia.org/wiki/Integrated_development_environment)). The scanner works almost like a virtual companion by providing issues and suggested fixes as code is written. You cannot shift any more left than this. As we’re in the realm of looking into code and providing insight **SAST and SCA tools may be capable of doing this**. In the Python world, I personally really like installing [bandit](https://pypi.org/project/bandit/) and enabling it as a linter in [VSCode](https://code.visualstudio.com) (*CTRL/CMD + SHIFT + P > Python: Select Linter*).
 
-What I also like about tools like bandit and [hadolint](https://github.com/hadolint/hadolint) (the latter scans Dockerfiles) is the fact that triages can be provided as code. From an audibility perspective that’s great given source control is able to track who did what and when.
+What I also like about tools like [bandit](https://pypi.org/project/bandit/) and [hadolint](https://github.com/hadolint/hadolint) (the latter scans Dockerfiles) is the fact that triages can be provided as code. From an audibility perspective that’s great given source control is able to track who did what and when.
 
 ```python
 import yaml
@@ -44,7 +44,7 @@ with open(yaml_file, 'r') as fh:
 foo = yaml.load(my_yaml)  # nosec Bandit B506: user input has been previously sanitized.
 ```
 
-*Example of a triaged vulnerability in python code using banding. B506 highlights that the load() method in the [pyyaml](https://pypi.org/project/PyYAML/) library is vulnerable when consuming user-provided input. Adding `# nosec` as part of the comment, informs the scanner that the issue is to be ignored.*
+*Example of a triaged vulnerability in python code using [bandit](https://pypi.org/project/bandit/). B506 highlights that the load() method in the [pyyaml](https://pypi.org/project/PyYAML/) library is vulnerable when consuming user-provided input. Adding `# nosec` as part of the comment, informs the scanner that the issue is to be ignored.*
 
 ??? question "What is triaging?"
     That’s when a human assesses an issue to determine whether it is exploitable or not. In case there are possible mitigations these can be applied and provided to explain why a reported vulnerability is being dismissed in a scan report.
