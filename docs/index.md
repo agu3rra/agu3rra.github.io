@@ -9,6 +9,10 @@ Welcome to my blog. Here you can find articles on technology related topics that
     Talk is cheap. Show me the code.
 
 ## Blog posts
+!!! tldr "[Tackling vulnerabilities in open-source software](blog/vulnsOSS/article.md)"
+    5 min read
+
+    This article seeks to provide an overview of different security scanners available and practical use strategies to establish a good development workflow.
 
 !!! tldr "[Pragmatic Security Testing](blog/pragmaticST/article.md)"
     8 min read
