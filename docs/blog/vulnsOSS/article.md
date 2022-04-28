@@ -3,9 +3,9 @@
 
 So you’re keeping track of all the open-source dependencies (aka libraries) in your software and you found a vulnerability. Well... consider yourself lucky, because I usually find a whole bunch of them! Jokes aside, this article will talk about the possible ways of dealing with it.
 
-![help.jpg](help.jpg)
+![tackle.jpg](tackle.jpg)
 
-Photo by [Annie Spratt](https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on Unsplash.
+Photo by [Katrina Berban](https://unsplash.com/photos/k24k1INxuxk) on Unsplash.
 
 ## Direct Vs. Transitive dependencies
 The different possible dependency paths a vulnerability comes from play a role in the difficulty level of how to treat it. Direct dependencies are those that you explicitly add to your code. Since software is commonly built on top of pre-existing software, libraries you pull directly will often have direct dependencies of their own. These will be considered transitive or indirect dependencies and they can be nested several levels down the supply chain as even your indirect dependencies can have dependencies of their own.
