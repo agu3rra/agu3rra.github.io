@@ -65,7 +65,7 @@ It is also possible that the vulnerability has a mitigation factor in place. The
 And finally, perhaps the exploit condition is not met and the vulnerability cannot be exploited in your software. Going back to the `pandas` example ([CVE-2020-13091](https://nvd.nist.gov/vuln/detail/CVE-2020-13091)), remember that the CVE entry described that the vulnerable method was `read_pickle()`. So, if you know you’re not calling it anywhere in code, then it should not affect you. A caveat with that is when you’re talking about vulnerabilities in transitive dependencies as it can become difficult to determine if somewhere in your dependency tree calls to that specific method are made indirectly.
 
 !!! warning "What if the conditions change?"
-    Another important factor to consider is that a method that is not used today may be invoked in the future as your software evolves. Once a vulnerability is dismissed, you may re-introduce it depending on what tool you used to detect it (see post on security scanners). So the best alternative to play it safe is to ensure regular patching is part of your development process.
+    Another important factor to consider is that a method not in use today may be invoked in the future as your software evolves. Once a vulnerability is dismissed, you may re-introduce it and not get a new CVE alert depending on what tool you used to detect it (see [post on security scanners](../pragmaticST/article.md)). So the best alternative to play it safe is to ensure regular patching is part of your development process.
 
 ## References
 
