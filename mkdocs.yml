@@ -60,6 +60,7 @@ nav:
   - Home: index.md  # put in sequential blog content here
   - About: about.md
   - Blog posts:  # do not put too many categories until you've enough posts
+    - Tackling vulnerabilities in open-source software: blog/vulnsOSS/article.md
     - Pragmatic Security Testing: blog/pragmaticST/article.md
     - Python CA issues on HTTPS corporate services: blog/pythonCustomsCAs/article.md
     - Proxying traffic in iOS13: blog/proxyIos13/article.md
