@@ -6,16 +6,21 @@ on:
       - main
 jobs:
   deploy:
+    name: Build and deploy documentation
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy documentation
-        env:
-          GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
-        - uses: actions/checkout@v2
-        - uses: actions/setup-python@v2
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Set up python runtime
+        uses: actions/setup-python@v3
           with:
             python-version: 3.x
-        - run: | 
+
+      - name: 
+        env:
+          GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
+        run: | 
           pip install pipenv
           pipenv install
           pipenv run mkdocs gh-deploy --force
