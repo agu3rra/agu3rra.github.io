@@ -17,7 +17,7 @@ jobs:
         with:
           python-version: 3.x
 
-      - name: 
+      - name: Push
         env:
           GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
         run: | 
