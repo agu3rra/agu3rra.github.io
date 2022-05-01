@@ -8,10 +8,14 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
-        with:
-          python-version: 3.x
-      - run: pip install pipenv
-      - run: pipenv install
-      - run: pipenv run mkdocs gh-deploy --force
+      - name: Deploy documentation
+        env:
+          GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
+        - uses: actions/checkout@v2
+        - uses: actions/setup-python@v2
+          with:
+            python-version: 3.x
+        - run: | 
+          pip install pipenv
+          pipenv install
+          pipenv run mkdocs gh-deploy --force
