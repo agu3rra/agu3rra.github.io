@@ -11,6 +11,9 @@ repo_url: https://github.com/agu3rra/agu3rra.github.io
 
 # Customization
 extra:
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/agu3rra
