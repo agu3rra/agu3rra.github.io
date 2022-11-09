@@ -6,8 +6,9 @@ site_description: >-
   My personal blog.
 
 # Repository
-repo_name: agu3rra.github.io
+repo_name: GitHub
 repo_url: https://github.com/agu3rra/agu3rra.github.io
+edit_uri: edit/main/docs
 
 # Customization
 extra:
