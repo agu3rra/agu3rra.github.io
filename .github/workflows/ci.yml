@@ -20,5 +20,6 @@ jobs:
       - name: Push
         env:
           GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
-        run: | 
+        run: |
+          curl -sSL https://install.python-poetry.org | python3 -
           poetry run mkdocs gh-deploy --force
