@@ -50,6 +50,11 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
 copyright: Copyright ©️ 2023 - Andre Guerra
 
 plugins:
@@ -81,4 +86,6 @@ nav:
     - Proxying traffic in iOS13: security/proxyIos13/article.md
     - TLS Handshake: security/tlsHandshake/article.md
   - Projects:
-    - Volume Calculations for Digital Elevation Models in Python (volpy) : https://agu3rra.github.io/volpy/
+    - Volume Calculations for Digital Elevation Models:
+      - Overview: projects/volpy/index.md
+      - Methodology: projects/volpy/methodology.md
