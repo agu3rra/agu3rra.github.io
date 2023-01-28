@@ -46,28 +46,39 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
+copyright: Copyright ©️ 2023 - Andre Guerra
 
 plugins:
   - search
-  # - git-revision-date-localized
+  - git-revision-date-localized
 
 theme:
   name: material
-  logo: logo.png
-  favicon: logo-white.png
+  logo: assets/logos/logo.png
+  favicon: assets/logos/logo-white.png
   palette:
     primary: 'white'
     accent: 'grey'
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.top
+    - content.code.copy
 
 nav:
-  - Home: index.md  # put in sequential blog content here
-  - About: about.md
-  - Blog posts:  # do not put too many categories until you've enough posts
-    - Tackling vulnerabilities in open-source software: blog/vulnsOSS/article.md
-    - Pragmatic Security Testing: blog/pragmaticST/article.md
-    - Python CA issues on HTTPS corporate services: blog/pythonCustomsCAs/article.md
-    - Proxying traffic in iOS13: blog/proxyIos13/article.md
-    - TLS Handshake: blog/tlsHandshake/article.md
-  - Project pages:
+  - Home: index.md
+  - Security:
+    - Tackling vulnerabilities in open-source software: security/vulnsOSS/article.md
+    - Pragmatic Security Testing: security/pragmaticST/article.md
+    - Python CA issues on HTTPS corporate services: security/pythonCustomsCAs/article.md
+    - Proxying traffic in iOS13: security/proxyIos13/article.md
+    - TLS Handshake: security/tlsHandshake/article.md
+  - Projects:
     - Volume Calculations for Digital Elevation Models in Python (volpy) : https://agu3rra.github.io/volpy/

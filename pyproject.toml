@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "agu3rra-github-io"
+version = "0.1.0"
+description = "personal blog"
+authors = ["agu3rra <agu3rra@proton.me>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "agu3rra"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mkdocs-material = "^9.0.6"
+mkdocs-git-revision-date-localized-plugin = "^1.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
