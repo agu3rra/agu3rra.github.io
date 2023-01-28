@@ -21,6 +21,4 @@ jobs:
         env:
           GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
         run: | 
-          pip install pipenv
-          pipenv install
-          pipenv run mkdocs gh-deploy --force
+          poetry run mkdocs gh-deploy --force
