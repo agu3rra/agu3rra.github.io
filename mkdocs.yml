@@ -78,7 +78,7 @@ theme:
     - content.code.copy
 
 nav:
-  - Home: index.md
+  - Welcome: index.md
   - Security:
     - Tackling vulnerabilities in open-source software: security/vulnsOSS/article.md
     - Pragmatic Security Testing: security/pragmaticST/article.md
