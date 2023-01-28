@@ -79,6 +79,8 @@ theme:
 
 nav:
   - Welcome: index.md
+  - Development:
+    - netrc: dev/netrc.md
   - Security:
     - Tackling vulnerabilities in open-source software: security/vulnsOSS/article.md
     - Pragmatic Security Testing: security/pragmaticST/article.md
