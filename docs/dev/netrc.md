@@ -39,9 +39,14 @@ As you can see a host can be a DNS name entry, IPv4 or IPv6 address. One special
 
 !!! quote "Oh, so you're running Windows? Fear not, we've got you covered!"
 
-As windows doesn't have an exact `$HOME` pointing to what it considers a user's `HOME` folder, here's how you can create `.netrc`:
+As windows has different environment variables, we need to have it point what it considers a user's `HOME` folder, here's how you can create `.netrc`:
 
 1. Open a command prompt or PowerShell terminal.
 1. setup `HOME` to point to Windows' version of it by running `setx HOME %USERPROFILE%`.
 1. run `echo %HOME%` and verify it points to the current user's `HOME` folder (e.g.: `C:\Users\YOURNAME`).
 1. Create a `_netrc` instead of a `.netrc` file same as on step #3 for [unix](#on-unix).
+
+## Done
+Now you can `git clone https://...` instead of using `ssh` (as it's common practice in companies to disable SSH services), `go get` Golang libraries that are behind a GIT server that requires authentication and save the planet among other things.
+
+![hack](https://media.giphy.com/media/6OrCT1jVbonHG/giphy.gif)
