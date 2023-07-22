@@ -66,8 +66,20 @@ theme:
   logo: assets/logos/logo.png
   favicon: assets/logos/logo-white.png
   palette:
-    primary: 'white'
-    accent: 'grey'
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: 'white'
+      accent: 'grey'
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: green
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
   features:
     - navigation.instant
     - navigation.tracking
