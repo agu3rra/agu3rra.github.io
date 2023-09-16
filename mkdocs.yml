@@ -25,6 +25,10 @@ extra:
 
 # Extensions
 markdown_extensions:
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+      check_paths: true
   - abbr
   - pymdownx.magiclink
   - admonition
@@ -44,7 +48,6 @@ markdown_extensions:
   - pymdownx.smartsymbols
   - pymdownx.highlight:
       anchor_linenums: true
-  - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
