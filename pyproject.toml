@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "personal blog"
 authors = ["agu3rra <agu3rra@proton.me>"]
 license = "MIT"
-readme = "README.md"
+readme = "readme.md"
 packages = [{include = "agu3rra"}]
 
 [tool.poetry.dependencies]
