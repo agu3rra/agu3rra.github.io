@@ -5,7 +5,6 @@ description = "personal blog"
 authors = ["agu3rra <agu3rra@proton.me>"]
 license = "MIT"
 readme = "readme.md"
-packages = [{include = "agu3rra"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
