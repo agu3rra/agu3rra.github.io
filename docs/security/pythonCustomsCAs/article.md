@@ -51,6 +51,6 @@ Append the [Base64](https://en.wikipedia.org/wiki/Base64) encoded certificate da
 ## Try it yourself
 You should now be able to copy the contents of the PEM file obtained above into the `cacert.pem` file that Python uses. Then your Python libraries should be able to call services that were signed by the custom CA or self-signed certificate.
 
-If you found any errors or have anything you’d like to see added to this article, please feel free to message me on [Twitter](https://twitter.com/agu3rra).
+If you found any errors or have anything you’d like to see added to this article, please feel free to [create an issue here](https://github.com/agu3rra/agu3rra.github.io/issues).
 
 Thanks for reading!
