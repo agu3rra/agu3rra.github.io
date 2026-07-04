@@ -17,3 +17,6 @@ source .venv/bin/activate
 # Serve the blog locally
 zensical serve -a localhost:8088
 ```
+
+## Repository setup
+Go to your repository on GitHub and make sure you select **Settings → Pages → Build and deployment → Source →  GitHub Actions**. This allow the current pipeline to build and deploy the blog automatically on every merge to `main`.
