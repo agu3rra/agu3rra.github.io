@@ -29,7 +29,7 @@ $$
 
 This is what it looks like when viewed from the top:  
 
-<iframe width=700, height=500 frameBorder=0 src="../img/mesh.html"></iframe>
+<iframe width=700, height=500 frameBorder=0 src="./img/mesh.html"></iframe>
 
 ### Step 2: From triangles to plane equations
 The plane equation `z=f(x,y)` is obtained for each group of 3 distinct points (triangles) in 3d space by applying some basic linear algebra. Given the previous collection of points `[A, B, C]` in the cartesian system:
