@@ -7,6 +7,28 @@
 # ============================================================================
 
 [project]
+nav = [
+  {"Home"="index.md"},
+  {"Blog"=[
+    {"Software Development"=[
+      "dev/netrc.md",
+    ]},
+    {"Software Security"=[
+      "security/vulnsOSS/article.md",
+      "security/pragmaticST/article.md",
+      "security/pythonCustomsCAs/article.md",
+      "security/proxyIos13/article.md",
+      "security/tlsHandshake/article.md",
+    ]},
+  ]},
+  {"Projects"=[
+    {"Volume Calculations for Digital Elevation Models"=[
+      "projects/volpy/overview.md",
+      "projects/volpy/methodology.md",
+    ]},
+  ]},
+]
+
 
 # The site_name is shown in the page header and the browser window title
 #
@@ -314,6 +336,10 @@ link = "https://github.com/agu3rra"
 icon = "fontawesome/brands/linkedin"
 link = "https://linkedin.com/in/agu3rra"
 
+[[project.extra.social]]
+icon = "fontawesome/brands/instagram"
+link = "https://instagram.com/agu3rra"
+
 # ----------------------------------------------------------------------------
 # In this section you can configure the Markdown extensions that are used when
 # rendering your documentation. We enable the most useful extensions by default,
@@ -322,6 +348,8 @@ link = "https://linkedin.com/in/agu3rra"
 # Read more:
 # - https://zensical.org/docs/setup/extensions/
 # ----------------------------------------------------------------------------
+[project.markdown_extensions.pymdownx.snippets]
+auto_append = ["includes/abbreviations.md"]
 [project.markdown_extensions.abbr]
 [project.markdown_extensions.admonition]
 [project.markdown_extensions.attr_list]
