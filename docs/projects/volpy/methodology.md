@@ -58,6 +58,6 @@ $$
 $$
 
 ### From GPS to Cartesian Coordinates.
-In the event of the [terrain survey](###-Terrain-survey) being executed thru a GPS device (the most common case) an extra step is required prior to applying the volume calculation: [map projection](https://en.wikipedia.org/wiki/Map_projection).
+In the event of the [terrain survey](#terrain-survey) being executed thru a GPS device (the most common case) an extra step is required prior to applying the volume calculation: [map projection](https://en.wikipedia.org/wiki/Map_projection).
 
-For the purpose of this project the [Universal Traverse Mercator](https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system) was used to convert from GPS coordinates (latitude, longitude, elevation) to a Cartesian coordinate system which is expected by the algorithm in [step 1](###-Step-1:-From-points-to-triangles).
+For the purpose of this project the [Universal Traverse Mercator](https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system) was used to convert from GPS coordinates (latitude, longitude, elevation) to a Cartesian coordinate system which is expected by the algorithm in [step 1](#step-1-from-points-to-triangles).

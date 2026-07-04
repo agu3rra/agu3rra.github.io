@@ -1,4 +1,4 @@
-# Volume Calculations for Digital Elevation Models in Python (**volpy**)
+# Overview
 
 The purpose of this Python project is to provide the means of calculating volumes out of a Digital Elevation Model ([DEM](https://en.wikipedia.org/wiki/Digital_elevation_model)) represented by Triangulated Irregular Network ([TIN](https://en.wikipedia.org/wiki/Triangulated_irregular_network)).
 
