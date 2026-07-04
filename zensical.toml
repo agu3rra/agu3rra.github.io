@@ -11,30 +11,32 @@
 # The site_name is shown in the page header and the browser window title
 #
 # Read more: https://zensical.org/docs/setup/basics/#site_name
-site_name = "Documentation"
+site_name = "Andre Guerra's Blog"
 
 # The site_description is included in the HTML head and should contain a
 # meaningful description of the site content for use by search engines.
 #
 # Read more: https://zensical.org/docs/setup/basics/#site_description
-site_description = "A new project generated from the default template project."
+site_description = "A personal blog by Andre Guerra."
 
 # The site_author attribute. This is used in the HTML head element.
 #
 # Read more: https://zensical.org/docs/setup/basics/#site_author
-site_author = "<your name here>"
+site_author = "Andre Guerra"
 
 # The site_url is the canonical URL for your site. When building online
 # documentation you should set this.
 # Read more: https://zensical.org/docs/setup/basics/#site_url
 #site_url = "https://www.example.com/"
+repo_url = "https://github.com/agu3rra/agu3rra.github.io"
+repo_name = "agu3rra.github.io"
 
 # The copyright notice appears in the page footer and can contain an HTML
 # fragment.
 #
 # Read more: https://zensical.org/docs/setup/basics/#copyright
 copyright = """
-Copyright &copy; 2026 The authors
+Copyright &copy; 2026 Andre Guerra
 """
 
 # Zensical supports both implicit navigation and explicitly defined navigation.
@@ -215,12 +217,12 @@ features = [
     # When tabs are enabled, top-level sections are rendered in a menu layer
     # below the header for viewports above 1220px, but remain as-is on mobile.
     # https://zensical.org/docs/setup/navigation/#navigation-tabs
-    #"navigation.tabs",
+    "navigation.tabs",
 
     # When sticky tabs are enabled, navigation tabs will lock below the header
     # and always remain visible when scrolling down.
     # https://zensical.org/docs/setup/navigation/#sticky-navigation-tabs
-    #"navigation.tabs.sticky",
+    "navigation.tabs.sticky",
 
     # A back-to-top button can be shown when the user, after scrolling down,
     # starts to scroll up again.
@@ -291,18 +293,26 @@ features = [
 scheme = "default"
 toggle.icon = "lucide/sun"
 toggle.name = "Switch to dark mode"
+primary = "orange"
+accent = "orange"
 
 [[project.theme.palette]]
 scheme = "slate"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to light mode"
+primary = "green"
+accent = "green"
 
 # ----------------------------------------------------------------------------
 # The "extra" section contains miscellaneous settings.
 # ----------------------------------------------------------------------------
-#[[project.extra.social]]
-#icon = "fontawesome/brands/github"
-#link = "https://github.com/user/repo"
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/agu3rra"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/linkedin"
+link = "https://linkedin.com/in/agu3rra"
 
 # ----------------------------------------------------------------------------
 # In this section you can configure the Markdown extensions that are used when
@@ -320,6 +330,7 @@ toggle.name = "Switch to light mode"
 [project.markdown_extensions.md_in_html]
 [project.markdown_extensions.toc]
 permalink = true
+toc_depth = "3"
 [project.markdown_extensions.pymdownx.arithmatex]
 generic = true
 [project.markdown_extensions.pymdownx.betterem]
