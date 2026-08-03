@@ -1,5 +1,6 @@
 # Welcome to my Blog!
 
+![skeletor](./assets/images/skeletor-250.png){ align=right }
 I'm passionate about software development, and infrastructure, with a strong focus on security and automation.
 Programmatically solving problems is what I like to do best. Python 🐍 is my primary language of choice and I'm a huge fan of its community and how it allows one to solve complex problems in a simple fashion.
 
