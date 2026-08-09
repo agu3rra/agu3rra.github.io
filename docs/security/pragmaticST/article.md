@@ -1,4 +1,7 @@
 # Pragmatic Security Testing
+
+!!! abstract "Original published date: 2022-04-21"
+
 8 min read
 
 ## Intro
