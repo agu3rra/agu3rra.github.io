@@ -1,6 +1,6 @@
 # Methodology
 
-!!! abstract "Original published date: 2023-01-28"
+!!! abstract "First published: 2023-01-28"
 
 ## Key Definitions
 
