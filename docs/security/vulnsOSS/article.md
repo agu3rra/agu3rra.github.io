@@ -1,4 +1,7 @@
 # Tackling vulnerabilities in open-source
+
+!!! abstract "Original published date: 2022-04-28"
+
 5 min read
 
 So you’re keeping track of all the open-source dependencies (aka libraries) in your software and you found a vulnerability. Well... consider yourself lucky, because I usually find a whole bunch of them! Jokes aside, this article will talk about the possible ways of dealing with it.

@@ -1,5 +1,7 @@
 # How to set up a proxy for security testing in iOS13
 
+!!! abstract "Original published date: 2022-04-16"
+
 4 min read
 
 So you want to hunt for bugs in Bug Bounty programs that allow testing of iOS applications, but couldn’t figure out how to take a pick on traffic coming out of your device? You’ve come to the right place! :)

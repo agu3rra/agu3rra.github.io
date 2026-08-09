@@ -1,5 +1,7 @@
 # Authentication using a `.netrc` file
 
+!!! abstract "Original published date: 2023-01-28"
+
 There's many different ways to setup authentication on [GIT](https://git-scm.com/): [SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh) and [personal access tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) when setting up a git remote are pretty straightforward, but my preferred one is using a `.netrc` file.
 It works pretty much the same whether you're setting up your local workstation or a CICD pipeline somewhere like [Jenkins](https://www.jenkins.io/) or [AzureDevOps](https://azure.microsoft.com/pt-br/products/devops) and it also works for fetching [Golang](https://go.dev/) dependencies which rely on `git` (when using `go get`).
 
