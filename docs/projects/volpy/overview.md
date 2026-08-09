@@ -1,6 +1,6 @@
 # Overview
 
-!!! abstract "Original published date: 2023-01-28"
+!!! abstract "First published: 2023-01-28"
 
 The purpose of this Python project is to provide the means of calculating volumes out of a Digital Elevation Model ([DEM](https://en.wikipedia.org/wiki/Digital_elevation_model)) represented by Triangulated Irregular Network ([TIN](https://en.wikipedia.org/wiki/Triangulated_irregular_network)).
 

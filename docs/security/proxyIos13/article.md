@@ -1,6 +1,6 @@
 # How to set up a proxy for security testing in iOS13
 
-!!! abstract "Original published date: 2022-04-16"
+!!! abstract "First published: 2022-04-16"
 
 4 min read
 

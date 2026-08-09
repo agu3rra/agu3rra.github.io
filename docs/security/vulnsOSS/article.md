@@ -1,6 +1,6 @@
 # Tackling vulnerabilities in open-source
 
-!!! abstract "Original published date: 2022-04-28"
+!!! abstract "First published: 2022-04-28"
 
 5 min read
 
