@@ -318,15 +318,15 @@ features = [
 scheme = "default"
 toggle.icon = "lucide/sun"
 toggle.name = "Switch to dark mode"
-primary = "violet"
-accent = "violet"
+primary = "orange"
+accent = "orange"
 
 [[project.theme.palette]]
 scheme = "slate"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to light mode"
-primary = "violet"
-accent = "violet"
+primary = "pink"
+accent = "pink"
 
 # ----------------------------------------------------------------------------
 # The "extra" section contains miscellaneous settings.
