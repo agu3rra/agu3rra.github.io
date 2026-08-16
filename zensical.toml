@@ -12,6 +12,7 @@ nav = [
   {"Blog"=[
     {"Software Development"=[
       "dev/netrc.md",
+      "dev/sapbtp-trials/sapbtp-trials.md" 
     ]},
     {"Software Security"=[
       "security/vulnsOSS/article.md",
