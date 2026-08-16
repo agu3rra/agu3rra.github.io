@@ -319,15 +319,15 @@ features = [
 scheme = "default"
 toggle.icon = "lucide/sun"
 toggle.name = "Switch to dark mode"
-primary = "orange"
-accent = "orange"
+primary = "blue"
+accent = "blue"
 
 [[project.theme.palette]]
 scheme = "slate"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to light mode"
-primary = "pink"
-accent = "pink"
+primary = "orange"
+accent = "orange"
 
 # ----------------------------------------------------------------------------
 # The "extra" section contains miscellaneous settings.
@@ -352,8 +352,6 @@ link = "https://instagram.com/agu3rra"
 # Read more:
 # - https://zensical.org/docs/setup/extensions/
 # ----------------------------------------------------------------------------
-[project.markdown_extensions.pymdownx.snippets]
-auto_append = ["includes/abbreviations.md"]
 [project.markdown_extensions.abbr]
 [project.markdown_extensions.admonition]
 [project.markdown_extensions.attr_list]
@@ -380,6 +378,8 @@ pygments_lang_class = true
 [project.markdown_extensions.pymdownx.magiclink]
 [project.markdown_extensions.pymdownx.mark]
 [project.markdown_extensions.pymdownx.smartsymbols]
+[project.markdown_extensions.pymdownx.snippets]
+auto_append = ["docs/includes/abbreviations.md"]
 [project.markdown_extensions.pymdownx.superfences]
 custom_fences = [
   { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }
