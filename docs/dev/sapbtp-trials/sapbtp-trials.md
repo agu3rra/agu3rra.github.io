@@ -80,15 +80,15 @@ Once that happens, you should be able to see the main global account menu, then 
 
 !!! warning "How long do I have it for?"
     A trial account is valid for up to 90 days before your playground is destroyed.
-    During that time, you can select a variety of SAP products and services to provision and learn through hand-on practice.
-    After that period you can create a brand new environment from scratch if you want to keep exploring SAP softwares.
+    During that time, you can select a limited (but meaningful) variety of SAP products and services to provision and learn through hand-on practice.
+    After that period you can create a brand new environment from scratch if you want to keep at it.
 
 ## Provisioning an SAP service
-Talk about trial duration and possible services to provision. Then continue with a sample service and access it.
+By default, your trial account comes with a Cloud Foundry environment enabled, which we'll use via SAP BTP Cockpit to provision and access an SAP Service.
 
 ??? question "What is Cloud Foundry?"
-    Explain without too much fuss.
+    Cloud Foundry is an open-source Platform as a Service (PaaS) for deploying, running, scaling, and managing applications without requiring developers to manually manage servers, operating systems, networking, or much of the application runtime. It supports multiple cloud providers, programming languages, and external services.
 
-
+    > reference: https://docs.cloudfoundry.org
 
 ![service-marketplace](./img/trial-service-marketplace.png)
