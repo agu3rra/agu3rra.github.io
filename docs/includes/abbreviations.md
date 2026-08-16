@@ -10,8 +10,10 @@
 *[IDE]: Integrated Development Environment
 *[NVD]: National Vulnerability Database
 *[IAST]: Interactive Application Security Testing
+*[PaaS]: Platform as a Service
 *[PR]: Pull Request
 *[PKI]: Public Key Infrastructure
+*[SaaS]: Software as a Service
 *[SAST]: Static Application Security Testing
 *[SAP]: SAP SE is a German multinational software corporation that develops enterprise software.
 *[SBOM]: Software Bill of Materials
