@@ -4,6 +4,14 @@
 
 This post covers a brief introduction to what SAP is and how to begin getting hands-on practice with its technology free of charge.
 
+??? tip "Attention to navigation tabs"
+    This post uses navigation tabs instead of piling up pictures for examples. Simply click the tabs to switch pictures/steps.
+    
+    === "Like"
+        Foobar ---- ⬆️⬆️⬆️⬆️
+    === "This"
+        ⬆️⬆️⬆️⬆️ ---- Jarjar
+
 ## What is SAP?
 
 SAP SE is a German multinational software corporation that develops enterprise software to manage business operations and customer relations. Founded in 1972 by five former IBM engineers in Weinheim, Germany. Since that's perhaps too much of a mouthful to remember, here's a more memorable version of it:
