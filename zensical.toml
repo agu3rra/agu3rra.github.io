@@ -393,3 +393,7 @@ custom_checkbox = true
 
 [project.markdown_extensions]
 zensical.extensions.glightbox = {}
+
+[project.extra.analytics]
+provider = "google"
+property = "G-61NZNWH3SG"
