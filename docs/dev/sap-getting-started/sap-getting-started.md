@@ -11,12 +11,14 @@ SAP SE is a German multinational software corporation that develops enterprise s
 !!! quote "The biggest software company you have never heard of."
     The actual numbers vary according per source, but more than 70% of global transaction revenue touches an SAP system at some point.
 
+    *video duration: 1m29s*
+
     <iframe width="560" height="315" src="https://www.youtube.com/embed/YyDM3LajCog?si=JKE-5G4_gXRsxn-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## In the before times
 Back when I first started working with SAP ERP systems ([back in 2009](https://www.linkedin.com/in/agu3rra/)), there were one of 2 ways you'd be able to learn anyting related to SAP: either you'd get lucky (like I did) and get hired by a company that had it and would teach you what it was and how it worked OR you'd self-sponsor some set of expensive certifications that would do the same.
 
-Fortunately, a lot has changed since then and today, anyone with a regular computer and a cell phone is able to provision not only SAP's famous ERP system based on ABAP, but also its many different cloud offerings via SAP BTP.
+Fortunately, a lot has changed since then, and today anyone with a regular computer and a cell phone is able to provision many different flavors of SAP software BTP.
 
 The first step on this journey is getting yourself an SAP Account, and that's what we'll cover next.
 
