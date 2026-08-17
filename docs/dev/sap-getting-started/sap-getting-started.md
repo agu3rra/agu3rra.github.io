@@ -17,16 +17,17 @@ This post covers a brief introduction to what SAP is and how to begin getting ha
 SAP SE is a German multinational software corporation that develops enterprise software to manage business operations and customer relations. Founded in 1972 by five former IBM engineers in Weinheim, Germany. Since that's perhaps too much of a mouthful to remember, here's a more memorable version of it:
 
 !!! quote "The biggest software company you have never heard of."
-    The actual numbers vary according per source, but more than 70% of global transaction revenue touches an SAP system at some point.
+    Approximatelly 77% of global transaction revenue touches an SAP system at some point.
+    > source: [SAP Fact Sheet 2020](https://www.sap.com/docs/download/investors/2020/sap-factsheet-jul2020-en.pdf).
 
     *video duration: 1m29s*
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/YyDM3LajCog?si=JKE-5G4_gXRsxn-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## In the before times
-Back when I first started working with SAP ERP systems ([back in 2009](https://www.linkedin.com/in/agu3rra/)), there were one of 2 ways you'd be able to learn anyting related to SAP: either you'd get lucky (like I did) and get hired by a company that had it and would teach you what it was and how it worked OR you'd self-sponsor some set of expensive certifications that would do the same.
+Back when I first started working with SAP ERP systems ([back in 2009](https://www.linkedin.com/in/agu3rra/)), there was one of 2 ways you'd be able to learn anything related to SAP: either you'd get lucky (like I did) and get hired by a company that had it and would teach you what it was and how it worked OR you'd self-sponsor some set of expensive certifications that would do the same.
 
-Fortunately, a lot has changed since then, and today anyone with a regular computer and a cell phone is able to provision many different flavors of SAP software BTP.
+Fortunately, a lot has changed since then, and today anyone with a regular computer and a cell phone is able to provision many different flavors of SAP software on BTP.
 
 The first step on this journey is getting yourself an SAP Account, and that's what we'll cover next.
 
@@ -43,8 +44,8 @@ It acts as a central wallet that ties together all your SAP user identities (suc
 > source: https://www.sap.com/account/universal-id.html
 
 ??? question "How does one link SAP accounts?"
-    Your email address is the primary association key: Instead of manually linking accounts.
-    All SAP user accounts that use the same email address will automatically be associated
+    Your email address is the primary association key (accounts are no longer manually linked).
+    All SAP user accounts that use the same email address will automatically be associated.
 
 #### Creating an SAP ID
 
@@ -105,7 +106,7 @@ By default, your trial account comes with a Cloud Foundry environment enabled, w
 
     > reference: https://docs.cloudfoundry.org
 
-From the **Service Marketplace** menu, weĺl select **[SAP HANA Cloud](https://www.sap.com/products/data-cloud/hana.html)** and use the Cockpit UI to provision a working version of SAP's famous in-memory database. The menu requires you to provide an initial system password and I recommend you use a password manager for that (i.e.: [ProtonPass](https://proton.me/pass), [BitWarden](https://bitwarden.com/)). Once you finish going through the creation menu, wait for instance creation to complete.
+From the **Service Marketplace** menu, we'll select **[SAP HANA Cloud](https://www.sap.com/products/data-cloud/hana.html)** and use the Cockpit UI to provision a working version of SAP's famous in-memory database. The menu requires you to provide an initial system password, and I recommend you use a password manager for that (i.e.: [ProtonPass](https://proton.me/pass), [BitWarden](https://bitwarden.com/)). Once you finish going through the creation menu, wait for instance creation to complete.
 
 === "Marketplace"
     ![service-marketplace](./img/trial-service-marketplace.png)
@@ -246,7 +247,7 @@ In this example, by generating a service-key, I see our HANA DB host is `21ecd94
     ![hana-cloud-service-key](./img/hana-cloud-service-key.png)
 
 ### Allow listing
-By default, does not allow inbound connections from the internet, so the next step is to add your computer's IP address to an allow list. For that we need to enable the **SAP HANA Cloud > Tools** plan on BTP. Create it in the **Instances and Subscriptions** menu and wait for provisioning to complete. Complete instructions at [Subscribing to the SAP HANA Cloud Administration Tools](https://help.sap.com/docs/hana-cloud/sap-hana-cloud-administration-guide/subscribing-to-sap-hana-cloud-administration-tools).
+By default, it does not allow inbound connections from the internet, so the next step is to add your computer's IP address to an allow list. For that we need to enable the **SAP HANA Cloud > Tools** plan on BTP. Create it in the **Instances and Subscriptions** menu and wait for provisioning to complete. Complete instructions at [Subscribing to the SAP HANA Cloud Administration Tools](https://help.sap.com/docs/hana-cloud/sap-hana-cloud-administration-guide/subscribing-to-sap-hana-cloud-administration-tools).
 
 Once you assign the correct **Role Collections** in BTP, then clicking the HANA instance should take you to **HANA Cloud Central**. Once in there, access the **Manage Configuration** menu and add *Allow all IP addresses*. Wait for the configuration details to refresh, then attempt to connect using `hdbsql` with user account `DBADMIN` and the password you've configured when provisioning. You should now be able to run SQL queries against your very first HANA Database.
 
@@ -272,6 +273,9 @@ Once you assign the correct **Role Collections** in BTP, then clicking the HANA 
     ```
 
 ## Until next time
-We've covered a lot of ground, from a brief intro to the SAP world to how anyone can get their feet wet with SAP software without having to spend out of pocket money.
+We've covered a lot of ground, from a brief intro to the SAP world to how anyone can get their feet wet with SAP software without having to spend out-of-pocket money.
 I hope you liked this introduction.
-Until next time.
+
+> Until next time.
+
+![until-next-time](./../../assets/images/until-next-time.jpg)
