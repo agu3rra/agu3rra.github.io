@@ -1,6 +1,6 @@
 # Welcome to my Blog!
 
-![me](./assets/images/agu3rra-2025-250.jpg){ align=right .rounded }
+![me](./assets/images/agu3rra-2025-200.jpg){ align=right .rounded }
 I'm passionate about software development, and infrastructure, with a strong focus on security and automation.
 Programmatically solving problems is what I like to do best.
 
